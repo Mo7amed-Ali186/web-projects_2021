@@ -1,0 +1,356 @@
+body {
+    margin: 0;
+    background-color: #fff;
+    font-family: "Playfair Display", serif;
+}
+
+.im {
+    border-radius: 10px;
+}
+.im:hover {
+    opacity: 0.60;
+}
+
+.im1 {
+    border-radius: 50%;
+    margin: auto;
+    width: 102px;
+}
+.im1:hover {
+    background-color: #6da3ff;
+}
+.im1:hover img {
+    opacity: 0.50;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.top-link-x, .top-link-y {
+    position: absolute;
+    text-decoration: none;
+    padding: 15px;
+    margin-top: 27px;
+    background-color: white;
+    border-bottom: 1px solid #eee;
+    display: none;
+}
+
+.top-link-x {
+    margin-left: 200px;
+}
+.top-link-y {
+    margin-left: 280px;
+}
+
+.mg:hover {
+    padding-bottom: 160px;
+}
+.mg:hover ul {
+    display: block;
+}
+
+.top-link-z {
+    list-style-type: none;
+    padding: 20px 80px 10px 0px;
+    font-size: 15px;
+}
+
+.select {
+    border: 0;
+    color: #777777;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.top {
+    padding: 5px 5%;
+}
+
+.top-text {
+    color: #777777;
+}
+.top-text:hover {
+    color: dodgerblue;
+}
+
+button {
+    font-weight: bold;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clear {
+    clear: both;
+    border-bottom: 1px solid #eee;
+}
+
+.v {
+    font-size: 20px;
+    color: black;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.re {
+    position: relative;
+}
+
+.color1 {
+    background-color: #f1f9ff;
+    margin-top: -25%;
+}
+
+.top-link0 {
+    float: right;
+    padding: 15px;
+    font-size: 13px;
+}
+
+.top-link1 {
+    padding: 10px;
+    color: dodgerblue;
+    display: inline;
+}
+.top-link1 a {
+    color: dodgerblue;
+}
+
+.top-link {
+    padding: 10px;
+    color: black;
+    display: inline;
+}
+.top-link a {
+    color: black;
+}
+.top-link a:hover {
+    color: dodgerblue;
+}
+
+.centre {
+    background-image: url(images/home-banner.jpg);
+}
+
+.span {
+    font-size: 15px;
+    position: absolute;
+    margin: 25px 0px 0px -125px;
+}
+
+.hidden {
+    overflow: hidden;
+}
+
+.text2 {
+    animation-name: Anime;
+    animation-duration: 3s;
+    position: relative;
+    animation-iteration-count: infinite;
+}
+
+@keyframes Anime {
+    0% { left: 0px; }
+    50% { left: 0px; }
+    100% { left: 100%; }
+}
+
+.centre-content-h1 {
+    font-size: 125px;
+}
+
+.centre-content {
+    text-align: center;
+    color: white;
+    padding: 100px;
+}
+
+.centre-content-p {
+    font-size: 20px;
+    margin-top: -75px;
+}
+
+.date {
+    float: left;
+    width: 23.3%;
+    text-align: center;
+    margin-top: -60px;
+    border: 2px solid #eee;
+    margin-right: 1%;
+    background-color: white;
+    padding: 25px 0px;
+}
+.date1 {
+    background-color: #f1f9ff;
+}
+
+.icon0 {
+    text-align: center;
+    width: 15px;
+}
+
+.button {
+    border: 0;
+    padding: 10px;
+    color: white;
+    background-color: dodgerblue;
+    border-radius: 5px;
+}
+.button:hover {
+    background-color: white;
+    color: dodgerblue;
+    border: 1px solid;
+}
+
+.day {
+    font-size: 50px;
+}
+
+.month {
+    font-size: 15px;
+}
+
+.s:hover h3 {
+    color: deepskyblue;
+}
+.s:hover img {
+    transition: 0.5s;
+    width: 105%;
+    height: 105%;
+}
+
+.text {
+    clear: both;
+    text-align: center;
+    padding: 100px;
+}
+
+.text-h1 {
+    font-size: 60px;
+}
+
+.text-p {
+    font-size: 15px;
+    font-weight: bold;
+    color: #777777;
+    font-family: "Raleway", sans-serif;
+}
+
+.img {
+    width: 46%;
+    margin: 0px 2%;
+}
+
+.img img {
+    width: 100%;
+    height: 360px;
+    border-radius: 5px;
+}
+
+.face {
+    width: 25%;
+    float: left;
+}
+
+.img3 {
+    width: 31%;
+    float: left;
+    margin: 0px 1%;
+}
+.img4 {
+    overflow: hidden;
+    height: 202px;
+}
+.img4 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.Go {
+    color: white;
+}
+
+.bottom {
+    background-image: url(images/footer-bg.jpg);
+    clear: both;
+    height: 550px;
+}
+
+.bottom-in {
+    background-color: black;
+    height: 550px;
+    opacity: 0.80;
+}
+
+.bottom-text {
+    width: 23%;
+    color: white;
+    float: left;
+    margin: 20px 1%;
+}
+.bottom-text img {
+    padding: 4px;
+}
+
+.input {
+    width: 80%;
+    height: 40px;
+    opacity: 0.10;
+    font-size: 20px;
+}
+.button-d {
+    border: 0;
+    background-color: #4d8eff;
+    width: 18%;
+    height: 40px;
+    font-size: 20px;
+}
+
+.link {
+    float: left;
+    width: 50%;
+}
+
+.link a {
+    color: white;
+}
+.link a:hover {
+    opacity: 0.60;
+}
+
+.icon {
+    float: right;
+    width: 20px;
+}
+
+.blue {
+    color: #4d8eff;
+}
+
+.end {
+    clear: both;
+    color: white;
+    padding-top: 160px;
+}
+
+/* clearfix */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}

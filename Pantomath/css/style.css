@@ -1,0 +1,239 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "playfair display,serif";
+}
+
+.p-bold {
+    color: #b06bb2;
+    font-weight: bold;
+    text-shadow: 0px 0px 27px hsl(286, 37%, 86%);
+}
+
+.bar {
+    box-shadow: 0 8px 6px -6px #ccc;
+    position: fixed;
+    width: 100%;
+    z-index: 2100;
+    background-color: white !important;
+}
+
+.bar a{
+    margin: 0px 5px;
+    font-weight: bold;
+}
+
+.icon-bar {
+    box-shadow: 0 0px 5px 2px #ccc;
+    width: 80px;
+    margin-right: 10px;
+    background-color: white;
+    padding: 5px;
+}
+
+.Search{
+    border-color: #983e98 ;
+}
+
+.bar-button{
+    border-color: #983e98 !important;
+}
+
+.bar-button hr{
+    width: 22px;
+    margin: 6px 0px 6px 0px;
+    border: 0px;
+    height: 1px;
+    border-radius: 10px;
+    background-color: #983e98;
+}
+
+
+
+.header .my-header{
+    padding-top: 70px;
+}
+
+.header .Website-Banner{
+    background-image: url(../img/Website-Banner.jpg);
+    background-size: 100%;
+}
+
+.header .Website-Banner-contant {
+    padding: 100px;
+    color: white;
+    text-shadow: 0px 3px 5px #b169b3;
+}
+
+.header .Website-Banner-contant h1{
+    font-size: 50px;
+}
+
+.header .Website-Banner-contant span{
+    font-size: 10px;
+    position: absolute;
+    margin: 0px 0px 0px -65px;
+    font-weight: bold;
+}
+
+.header .my-card{
+    margin: -50px 5% 0px 5%;
+    color: #b169b2 !important;
+    text-shadow: 1px 1px 3px #b17fc8;
+}
+
+.header .my-card h3:hover{
+    opacity:0.6 ;
+}
+
+.header .my-card img {
+    margin: auto ;
+    width: 100%;
+}
+
+.header .card{
+    box-shadow: 0 0px 5px 2px #b17fc8;
+}
+
+.header .list-unstyled li{
+    list-style-type: none;
+}
+
+
+
+
+.tips .my-tips{
+    text-align: center;
+    padding: 50px;
+    color: white;
+    text-shadow: 0px 3px 5px #b169b3;
+}
+
+div.foo {
+width: 90%;
+margin: 0 auto;
+text-align: center;
+}
+
+.letter {
+display: inline-block;
+font-size: 7em;
+margin: 0.2em;
+position: relative;
+color: #b169b2;
+transform-style: preserve-3d;
+perspective: 400;
+z-index: 1;
+animation-duration: 4s;
+animation-direction: alternate;
+animation-iteration-count: infinite;
+animation-name: floating;
+animation-play-state: running;
+animation-timing-function: ease-in-out;
+}
+
+.letter:before, .letter:after {
+position: absolute;
+content: attr(data-letter);
+transform-origin: top left;
+top: 0;
+left: 0;
+}
+
+.letter, .letter:before, .letter:after {
+transition: all 0.3s ease-in-out;
+}
+
+.letter:before {
+    color: #fff;
+    text-shadow: -1px 0px 1px rgba(255,255,255,.8), 1px 0px 1px rgba(0,0,0,.8);
+    z-index: 3;
+    transform: rotateX(0deg) rotateY(-15deg) rotateZ(0deg);
+}
+
+.letter:after {
+    color: rgba(0,0,0,.11);
+    z-index: 2;
+    transform: scale(1.08,1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg,1deg);
+}
+
+.letter:hover:before {
+    color: #fafafa;
+    transform: rotateX(0deg) rotateY(-40deg) rotateZ(0deg);
+}
+
+.letter:hover:after {
+    transform: scale(1.08,1) rotateX(0deg) rotateY(40deg) rotateZ(0deg) skew(0deg,22deg);
+}
+
+
+
+.news .my-img{
+    overflow: hidden;
+}
+
+.news .h-new{
+    font-size: 70px;
+    color: white;
+    text-shadow: 0px 3px 5px #b169b3;
+    margin-left: 5px;
+}
+
+.news .btn-news{
+    color: white;
+    text-shadow: 0px 3px 5px #b169b3;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.news .my-img img{
+    border-radius: 5px;
+    visibility: visible;
+    animation-duration: 0.5s;
+    animation-name: fadeIn;
+    transition: 1s ;
+    width: 100%;
+    height: 220px;
+}
+
+.news .my-img img:hover{
+    transform:scale(1.1 , 1.1) rotate(10deg) ;
+    opacity: 0.8;
+}
+
+.famous-people .pioneers{
+    text-align: center ;
+    color: white;
+    text-shadow: 0px 3px 5px #b169b3;
+}
+
+.famous-people .pioneers img{
+    width: 20px;
+}
+
+.famous-people .my-card{
+    margin: 0;
+    border-radius: 10px;
+    color: white;
+    text-shadow: 0px 3px 5px #b169b3;
+}
+
+.my-card img{
+    height: 300px;
+}
+
+
+footer{
+    padding: 35px;
+    color: white;
+    text-shadow: 0px 3px 5px #b169b3;
+    background: whitesmoke;
+}
+footer ul li{
+    padding: 5px;
+}
+footer ul li a{
+color: #983e98 !important;
+}
+
+.icon {float: right; width: 20px;}

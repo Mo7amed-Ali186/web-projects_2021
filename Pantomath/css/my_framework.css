@@ -1,0 +1,20 @@
+.btn-outline-pink {
+    color: #983e98 !important;
+  }
+  
+  .btn-outline-pink:hover {
+    color: #fff !important;
+    background-color: #983e98;
+    border-color: #983e98;
+  }
+
+  .btn-inline-pink {
+    color: #fff !important;
+    background-color: #983e98;
+    box-shadow: 0 0px 10px 2px #983e98;
+  }
+
+  .modal-dialog{
+    margin-top: 150px;
+  }
+  

@@ -1,0 +1,442 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+ :root {
+    --main-color: #6bbe4e;
+    --main-color-alt: #6bbe4e;
+    --main-transition: 0.3s;
+    --main-padding-top: 100px;
+    --main-padding-bottom: 100px;
+    --section-background: #ececec;
+}
+
+body {
+    background: #d5dddf;
+    margin: 0;
+}
+
+.Profile {
+    background-color: rgb(247 247 247);
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 0 solid transparent;
+    border-radius: .25rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 6px 0 rgb(218 218 253 / 65%), 0 2px 6px 0 rgb(206 206 238 / 54%);
+}
+
+.card-body {
+    background-color: #e9e9e9;
+}
+
+.me-2 {
+    margin-right: .5rem!important;
+}
+
+.main-titles::before {
+    content: "";
+    top: 26%;
+    left: -30px;
+    transform: skewX(-15deg);
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    border-radius: 2px;
+    background: #6bbe4e;
+}
+
+.main-title {
+    text-transform: uppercase;
+    margin: 0 auto 80px;
+    border: 2px solid #6bbe4e;
+    padding: 10px 20px;
+    font-size: 30px;
+    width: fit-content;
+    position: relative;
+    z-index: 1;
+    transition: var(--main-transition);
+}
+
+.main-title::before,
+.main-title::after {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background-color: var(--main-color);
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.main-title::before {
+    left: -30px;
+}
+
+.main-title::after {
+    right: -30px;
+}
+
+.main-title:hover::before {
+    z-index: -1;
+    animation: left-move 0.5s linear forwards;
+}
+
+.main-title:hover::after {
+    z-index: -1;
+    animation: right-move 0.5s linear forwards;
+}
+
+.main-title:hover {
+    color: white;
+    border: 2px solid white;
+    transition-delay: 0.5s;
+}
+
+
+/*start navbar*/
+
+.navbar {
+    z-index: 10000;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    text-transform: capitalize;
+    position: relative;
+    color: #ffffff !important;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.bg-dark {
+    --bs-bg-opacity: 1;
+    background-color: #3c5148!important
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+    background-color: #b2c5b2;
+    color: #6A6B65;
+}
+
+.form-control {
+    border-radius: 1.25rem;
+    border: 0px solid #ced4da;
+}
+
+.logo-co {
+    color: antiquewhite;
+}
+
+
+/* Large devices (desktops, 992px and up)*/
+
+@media (min-width: 992px) {
+    .navbar-light .navbar-nav .nav-link:hover,
+    .navbar-light .navbar-nav .nav-link.active {
+        background-color: #2f6049;
+        color: #c0d5b2;
+        position: relative;
+        border-radius: 1rem;
+    }
+    .navbar-light .navbar-nav .nav-link::after {
+        content: '';
+        display: block;
+        position: absolute;
+        background: transparent;
+        top: 90%;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        transition: background-color 0.3s ease;
+    }
+    .navbar-light .navbar-nav .nav-link:hover::after,
+    .navbar-light .navbar-nav .nav-link.active::after {
+        background-color: #d5dddf;
+    }
+}
+
+.navbar-light .navbar-toggler {
+    color: #688e4e;
+    border-color: #d5dddf;
+}
+
+.btn-outline-success {
+    color: #fbfbfb;
+    border-color: #198754;
+}
+
+
+/* Large devices (desktops, 992px and up)*/
+
+@media (max-width: 991.9px) {
+    .dropdown-menu-end[data-bs-popper] {
+        right: auto;
+        left: 0;
+    }
+}
+
+
+/*end*/
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #f4f4f4;
+    background-clip: border-box;
+    border: 0 solid transparent;
+    border-radius: .25rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 6px 0 rgb(218 218 253 / 65%), 0 2px 6px 0 rgb(206 206 238 / 54%);
+}
+
+.me-2 {
+    margin-right: .5rem!important;
+}
+
+.main-body {
+    margin-top: 40px;
+}
+
+
+/*start style page scroll */
+
+
+/* https://css-tricks.com/the-current-state-of-styling-scrollbars/ */
+
+html {
+    --scrollbarBG: linear-gradient(90deg, #6bbe4e, #3c5148 1px, #3c5148, #3c5148);
+    --thumbBG: #434343;
+}
+
+body::-webkit-scrollbar {
+    width: 13px;
+    height: 16px;
+}
+
+body {
+    scrollbar-width: thin;
+    scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--scrollbarBG);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--thumbBG);
+    border-radius: 16px;
+    border: 3px solid var(--scrollbarBG);
+    box-shadow: inset 2px 2px 2px #6bbe4e, inset -2px -2px 2px #6bbe4e40;
+}
+
+
+/*end*/
+
+.masthead-text {
+    height: 300px;
+}
+
+.form-control {
+    height: 45px;
+}
+
+select:hover {
+    color: #444645;
+    background: #ddd;
+}
+
+.login-or {
+    position: relative;
+    font-size: 18px;
+    color: #aaa;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.span-or {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: -2px;
+    margin-left: -25px;
+    background-color: #fff;
+    width: 50px;
+    text-align: center;
+}
+
+.hr-or {
+    background-color: #cdcdcd;
+    height: 1px;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+#login-dp {
+    min-width: 250px;
+    padding: 14px 14px 0;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, .8);
+}
+
+#login-dp .help-block {
+    font-size: 12px
+}
+
+#login-dp .social-buttons {
+    margin: 12px 0
+}
+
+#login-dp .social-buttons a {
+    width: 49%;
+}
+
+#login-dp .form-group {
+    margin-bottom: 10px;
+}
+
+.btn-fb {
+    color: #fff;
+    background-color: #3b5998;
+}
+
+.btn-fb:hover {
+    color: #fff;
+    background-color: #496ebc
+}
+
+.btn-tw {
+    color: #fff;
+    background-color: #55acee;
+}
+
+.btn-tw:hover {
+    color: #fff;
+    background-color: #59b5fa;
+}
+
+@media(max-width:768px) {
+    #login-dp {
+        background-color: inherit;
+        color: #fff;
+    }
+    #login-dp .bottom {
+        background-color: inherit;
+        border-top: 0 none;
+    }
+}
+
+.progress {
+    height: 5px;
+}
+
+.block-help {
+    font-weight: 300;
+}
+
+.hide {
+    display: none;
+}
+
+
+/* Start Animation */
+
+@keyframes up-and-down {
+    0%,
+    100% {
+        top: 0;
+    }
+    50% {
+        top: -50px;
+    }
+}
+
+@keyframes bouncing {
+    0%,
+    10%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+    40%,
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+@keyframes left-move {
+    50% {
+        left: 0;
+        width: 12px;
+        height: 12px;
+    }
+    100% {
+        left: 0;
+        border-radius: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@keyframes right-move {
+    50% {
+        right: 0;
+        width: 12px;
+        height: 12px;
+    }
+    100% {
+        right: 0;
+        border-radius: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@keyframes moving-arrow {
+    100% {
+        transform: translateX(10px);
+    }
+}
+
+@keyframes flashing {
+    0%,
+    40% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        width: 200%;
+        height: 200%;
+    }
+}
+
+@keyframes change-background {
+    0%,
+    100% {
+        background-image: url("../imgs/discount-background1.jpg");
+    }
+    50% {
+        background-image: url("../imgs/discount-background2.jpg");
+    }
+}
+
+
+/* End Animation */
